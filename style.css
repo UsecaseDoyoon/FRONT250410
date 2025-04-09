@@ -128,6 +128,15 @@ h3 {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
+.mother {
+  animation: slideInFromRight 1s ease-out forwards;
+}
+
+/* 프로젝트 카드에 애니메이션 적용 */
+.card {
+  animation: slideInFromRight 1s ease-out forwards;
+}
+
 /* 반응형 디자인 추가 */
 @media (max-width: 768px) {
   .card {
