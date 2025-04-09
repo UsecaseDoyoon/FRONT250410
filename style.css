@@ -128,6 +128,19 @@ h3 {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
+/* 오른쪽에서 날아오는 애니메이션 정의 */
+@keyframes slideInFromRight {
+  0% { 
+    transform: translateX(100px); /* 오른쪽에서 시작 */
+    opacity: 0; 
+  }
+  100% { 
+    transform: translateX(0); /* 제자리로 이동 */
+    opacity: 1; 
+  }
+}
+
+/* 스킬 아이콘에 애니메이션 적용 */
 .mother {
   animation: slideInFromRight 1s ease-out forwards;
 }
@@ -136,6 +149,8 @@ h3 {
 .card {
   animation: slideInFromRight 1s ease-out forwards;
 }
+
+
 
 /* 반응형 디자인 추가 */
 @media (max-width: 768px) {
