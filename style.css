@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'SBAggroB';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GowunDodum-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.card-body{
+  justify-items: center;
+}
+
 .ssi2{
   width: 105px;
   height: 110px;
@@ -9,6 +27,7 @@ body {
   background-size: cover;
   background-position: center;
   min-height: 100%; /* 전체 화면 높이 유지 */
+  
 }
 
 /* 네비게이션 바에 그라디언트와 부드러운 호버 효과 추가 */
@@ -51,6 +70,7 @@ li:hover {
   background: rgba(255, 255, 255, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   
+  
 }
 
 .bbb:hover {
@@ -65,7 +85,13 @@ li:hover {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   
+  
 }
+
+.card-title{
+  font-size: 21px !important;
+}
+
 
 .card:hover {
   transform: translateY(-10px); /* 카드 위로 떠오름 */
@@ -81,6 +107,9 @@ li:hover {
   padding: 10px 20px;
   font-weight: bold;
   transition: all 0.3s ease;
+  font-family: "GowunDodum-Regular" !important;
+  font-size: 17px !important;
+  margin: 2px 4px;
   
 }
 
@@ -92,8 +121,8 @@ li:hover {
 
 /* 제목에 애니메이션 추가 */
 h3 {
-  color: #6d2e41;
-  font-family: "Kalnia Glaze", serif;
+  color: #181490c6 !important;
+  font-family: "SBAggroB";
   font-weight: 600;
   position: relative;
   animation: slideIn 1s ease-out;
@@ -112,6 +141,7 @@ h3 {
   justify-content: center;
   flex-wrap: wrap; /* 반응형으로 아이템 줄바꿈 */
   gap: 20px; /* 아이템 간격 추가 */
+  
 }
 
 .sun {
@@ -119,7 +149,7 @@ h3 {
 }
 
 .pen {
-  font-family: "Nerko One", cursive;
+  font-family: "SBAggroB" !important;
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
