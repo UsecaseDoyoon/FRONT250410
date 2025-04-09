@@ -1,0 +1,140 @@
+.ssi2{
+  width: 105px;
+  height: 110px;
+}
+
+body {
+  background-image: url(12.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100%; /* 전체 화면 높이 유지 */
+}
+
+/* 네비게이션 바에 그라디언트와 부드러운 호버 효과 추가 */
+.navbar {
+  background: linear-gradient(135deg, rgba(40, 167, 69, 0.8), rgba(20, 90, 50, 0.8));
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  height: 4.5vw;
+  
+}
+
+.navbar-brand, .nav-link {
+  color: #fff !important;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffd700 !important; /* 호버 시 골드 컬러로 변경 */
+  transform: scale(1.05);
+}
+
+/* 리스트 아이템에 부드러운 애니메이션 추가 */
+li:hover {
+  transform: scale(1.1) rotate(2deg); /* 살짝 회전 효과 추가 */
+  color: #fff;
+  box-shadow: 0px 26px 56px rgba(0, 0, 0, 0.1), 
+              0px 102px 102px rgba(0, 0, 0, 0.09), 
+              0px 230px 138px rgba(0, 0, 0, 0.05);
+  border: 3px solid #74404b;
+  border-radius: 15%;
+  background: rgba(255, 255, 255, 0.1); /* 살짝 투명한 배경 추가 */
+  transition: all 0.3s ease; /* 부드러운 전환 */
+}
+
+/* 스킬 아이콘 스타일 개선 */
+.bbb {
+  border: 4px double #5b9467;
+  border-radius: 15%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.bbb:hover {
+  transform: scale(1.15) translateY(-5px); /* 위로 살짝 떠오르는 효과 */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 카드에 그라디언트 테두리와 호버 효과 추가 */
+.card {
+  border: none;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.card:hover {
+  transform: translateY(-10px); /* 카드 위로 떠오름 */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  border: 2px solid #28a745;
+}
+
+/* 버튼 스타일 개선 */
+.btn-primary {
+  background: linear-gradient(45deg, #007bff, #00d4ff);
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  
+}
+
+.btn-primary:hover {
+  background: linear-gradient(45deg, #0056b3, #00b7ff);
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 제목에 애니메이션 추가 */
+h3 {
+  color: #6d2e41;
+  font-family: "Kalnia Glaze", serif;
+  font-weight: 600;
+  position: relative;
+  animation: slideIn 1s ease-out;
+  padding-left: 0.8vw;
+  
+}
+
+@keyframes slideIn {
+  0% { transform: translateX(-50px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+/* 중앙 정렬 및 레이아웃 개선 */
+.mother {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* 반응형으로 아이템 줄바꿈 */
+  gap: 20px; /* 아이템 간격 추가 */
+}
+
+.sun {
+  margin: 0 20px;
+}
+
+.pen {
+  font-family: "Nerko One", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  color: #6d2e41;
+  font-size: 19px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* 반응형 디자인 추가 */
+@media (max-width: 768px) {
+  .card {
+    width: 100% !important; /* 모바일에서 카드 크기 조정 */
+    margin: 10px auto;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+}
